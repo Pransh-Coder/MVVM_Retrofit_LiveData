@@ -27,7 +27,7 @@ data class VolumeInfo (
     @SerializedName("maturityRating") val maturityRating : String,
     @SerializedName("allowAnonLogging") val allowAnonLogging : Boolean,
     @SerializedName("contentVersion") val contentVersion : String,
-    @SerializedName("imageLinks") val imageLinks : ImageLinks,
+    @SerializedName("imageLinks") val imageLinks : ImageLinks?,
     @SerializedName("language") val language : String,
     @SerializedName("previewLink") val previewLink : String,
     @SerializedName("infoLink") val infoLink : String,
@@ -35,6 +35,6 @@ data class VolumeInfo (
 )
 data class ImageLinks (
 
-    @SerializedName("smallThumbnail") val smallThumbnail : String,
+    @SerializedName("smallThumbnail") val smallThumbnail : String?,
     @SerializedName("thumbnail") val thumbnail : String
 )

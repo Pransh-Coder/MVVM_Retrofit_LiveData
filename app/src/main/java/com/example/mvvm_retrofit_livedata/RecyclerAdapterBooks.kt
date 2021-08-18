@@ -42,7 +42,7 @@ class RecyclerAdapterBooks(val bookListDataList: ArrayList<Items>) : RecyclerVie
             Log.e("RecyclerAdapter", "bindData: "+data.toString() )
             Log.e("RecyclerAdapter", "bindData imgLink: "+data.volumeInfo.imageLinks.smallThumbnail )
 
-            val url = data?.volumeInfo?.imageLinks?.smallThumbnail
+            val url = data.volumeInfo.imageLinks?.smallThumbnail
             Glide
                 .with(thumbnailImageView)
                 .load(url)
